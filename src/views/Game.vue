@@ -50,7 +50,7 @@ import Modal from '@/components/Modal.vue'
     GameDisplaySection
   }
 })
-export default class Home extends Vue {
+export default class Game extends Vue {
     gameChoices: Array<GameChoice> = [GameChoice.PAPER, GameChoice.ROCK, GameChoice.SCISSOR];
     isRunningAnimation = false;
     isGameOver = false;
@@ -125,7 +125,6 @@ export default class Home extends Vue {
       this.playerOutcome = ''
       this.computerOutcome = ''
       this.currentGameResultMessage = ''
-
 
       const computerChoice: GameChoice = this.generateComputerChoice()
       const gameResult: string = playerChoice + computerChoice
