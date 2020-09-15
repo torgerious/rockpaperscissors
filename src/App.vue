@@ -1,14 +1,20 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<!--      <router-link to="/">Home</router-link> |-->
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+  body{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #520029f7, #000000);
+    background: linear-gradient(to top, #520029f7, #000000);
+    min-height: 100vh;
+    overflow: hidden;
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
